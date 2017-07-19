@@ -13,17 +13,6 @@
  *= require_tree .
  *= require_self
  */
-h1{
-    font-size:42px;
-    color: #4B0082; 
-}
-
-html{
-    border-style: solid;
-    border-color:#4B0082;
-    font-family: sans-serif;
-    color: #B22222;
-}
 .todo{
     font-weight:bold;
     color:#8A2BE2;
@@ -46,7 +35,21 @@ a{
     padding: 8px;
     background-color:#ddddd;
 }
-
+.showh1{
+    color:#4B0082 ;
+    border: 50px ;
+    padding: 25px ;
+    border-style: solid ;
+}
+p{
+    display:block ;
+}
+.edith1{
+    color: #4B0082 ;
+    border: 50px ;
+    padding: 25px ;
+    border-style: solid ;
+}
 body{
     background: url(https://s-media-cache-ak0.pinimg.com/originals/c6/20/ca/c620caef7766c43a20b3ab81b2ebcbc0.png);
     background-size:cover;
