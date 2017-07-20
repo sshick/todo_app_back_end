@@ -1,7 +1,7 @@
 <h3>Todo #<%= params[:id] %></h3>
 <h1>Descriptions</h1>
         <p><input type="checkbox"><%= @todo.description %> 
-        <a href="edit.html"> Edit...</a></p>
+        <a href="/todo/edit/<%= @todo.id %>" class= "edit-todo-button"> Edit...</a></p>
         <!--Waking up: (6:00) Get out of bed and complete the regular morning routine.-->
         <!--<br><input type="checkbox">Eat Breakfast: (7:00) Go to the dining hall and eat a good breakfast.
         <a href="edit.html"> Edit...</a>
