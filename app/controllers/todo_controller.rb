@@ -8,7 +8,7 @@ class TodoController < ApplicationController
     
         todo_id = params[:id]
         if todo_id == '1'
-            @todo_description = "Wake Up"
+            @todo_description = "Wake Up: (6:00) Get out of bed and complete the regular morning routine."
         elsif todo_id == '2'
             @todo_description = "Eat Breakfast"
         elsif todo_id == '3'
