@@ -26,6 +26,14 @@ class TodoController < ApplicationController
     #        @todo_description = "Go to Bed: (21:00) GO back the the dorm room and get ready for sleep."
     #    end
     end
+    def new
+    end
+    def create
+        t = Todo.new
+        t.description = params['description']
+        t.save
+        redirect_to "/todo/show/#{ t.id }"
+    end
     def edit
     end
 end
