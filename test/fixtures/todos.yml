@@ -2,10 +2,8 @@
 
 one:
   description: MyString
-  id: 
   complete: false
 
 two:
   description: MyString
-  id: 
   complete: false
