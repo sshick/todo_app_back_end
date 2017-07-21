@@ -3,11 +3,12 @@
         It's super easy and fun-->
         <h2>Things to Do</h2>
         <ul> 
+        <% @todo.each do |todo| %>
             <li>
-                <input type="checkbox"> 
-                <span class="todo"> <a href="show/2">Wake Up</a></span>
+                <input type="checkbox"/> 
+                <span class="todo"> <a href="show/<%= todo.id%>"><%= todo.description %></a></span>
             </li> 
-            <li>
+           <!-- <li>
                 <input type="checkbox">
                 <span class="todo"> <a href="show/3">Breakfast</a></span>
             </li>
@@ -34,7 +35,8 @@
             <li>
                 <input type="checkbox"> 
                 <span class="todo"> <a href="show/9">Go to Bed</a></span>
-            </li>
+            </li>-->
+        <% end %>
         </ul>
         <div id="new-todo-block">
             <input id="enter-task" type="text" placeholder= "Enter Task...">
