@@ -6,7 +6,7 @@
         <% @todo.each do |todo| %>
             <li>
                 <input type="checkbox"/> 
-                <span class="todo"> <a href="show/<%= todo.id%>"><%= todo.description %></a></span>
+                <span class="todo"> <a href="/todo/show/<%= todo.id%>"><%= todo.description %></a></span>
             </li> 
            <!-- <li>
                 <input type="checkbox">
@@ -38,7 +38,4 @@
             </li>-->
         <% end %>
         </ul>
-        <div id="new-todo-block">
-            <input id="enter-task" type="text" placeholder= "Enter Task...">
-            <input id="submit-button" type="submit" value="Add">
-        </div>
+       <a href="/todo/new">Add a New Todo</a>

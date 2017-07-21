@@ -1,9 +1,11 @@
 class TodoController < ApplicationController
     def index
+        @todo = Todo.all
     end
     def show
         @todo = Todo.find_by_id(params[:id])
         #@todo_description = "CHANGE LATER"
+        
     # if the user types /todo/show/1
     # make todo_description equal "wake Up"
     
@@ -36,7 +38,7 @@ class TodoController < ApplicationController
     end
     def edit
         @todo = Todo.find_by_id(params[:id])
-       # redirect_to "/todo/edit/#{ t.id }"
+        redirect_to "/todo/edit/#{ t.id }"
     end
     def update
         @todo = Todo.find_by_id(params[:id])
