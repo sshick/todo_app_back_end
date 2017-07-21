@@ -36,6 +36,7 @@ class TodoController < ApplicationController
     end
     def edit
         @todo = Todo.find_by_id(params[:id])
+       # redirect_to "/todo/edit/#{ t.id }"
     end
     def update
         @todo = Todo.find_by_id(params[:id])
